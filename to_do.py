@@ -4,6 +4,9 @@ from tkinter import messagebox
 
 #creating the window/GUI
 win = tk.Tk()
+win.configure(bg="yellow")
+win.geometry('300x275')
+win.title('Assist@nt')
 
 #creating label
 label_1 = tk.Label(win, text="To-Do List")
