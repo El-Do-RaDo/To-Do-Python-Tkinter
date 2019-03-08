@@ -37,6 +37,13 @@ def delete():
 		tasks.remove(task)
 	update_lb()
 
+def delete_all():
+	confirmed = tk.messagebox.askyesno("Conformation","Do you want to delete all items??")
+	if confirmed == True:	
+		global tasks
+		tasks = []
+		update_lb()
+
 
 #creating label
 label_1 = tk.Label(win, text="To-Do List")
