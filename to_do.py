@@ -16,6 +16,18 @@ def update_lb():
 	for task in tasks:
 		count += 1
 		list_tsk.insert("end",task)
+		
+def cls_lb():
+	list_tsk.delete(0,"end")
+
+def add_task():
+	task = txt_inp.get()
+	if task != "":
+		tasks.append(task)
+		update_lb()
+	else:
+		tk.messagebox.showwarning("Warning","Please Enter the task!")
+	txt_inp.delete(0,"end")
 
 
 #creating label
