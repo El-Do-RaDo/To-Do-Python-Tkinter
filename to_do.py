@@ -29,6 +29,14 @@ def add_task():
 		tk.messagebox.showwarning("Warning","Please Enter the task!")
 	txt_inp.delete(0,"end")
 
+def edit():
+	pass
+def delete():
+	task = list_tsk.get("active")
+	if task in tasks:
+		tasks.remove(task)
+	update_lb()
+
 
 #creating label
 label_1 = tk.Label(win, text="To-Do List")
